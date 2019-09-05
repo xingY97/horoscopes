@@ -1,0 +1,14 @@
+<p>
+    Hello , {{name}}! <br/>
+    
+    {% if show_horoscopes %}
+    You are so 
+    <ui>
+        {% for horoscope in horoscopes %}
+            <li>{{ nice_things }}</li>
+        {% endfor %}
+    </ui>
+    {% else %}
+    Have a nice day!
+    {% endif %}!
+</p>
